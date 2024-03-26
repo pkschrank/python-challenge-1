@@ -141,12 +141,6 @@ while place_order:
                         quantity = 1
 
                     # Add the item name, price, and quantity to the order list
-                    # order.append({
-                    #     'Item name': item_name,
-                    #     'Price': price,
-                    #     'Quantity': quantity
-                    # })
-
                     item = next((item for item in order if item["Item name"] == item_name), None)
                     if item == None:
                         item = {
